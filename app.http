@@ -1,0 +1,27 @@
+### get players api
+GET http://localhost:3000/players/
+
+### add player api
+POST http://localhost:3000/players/
+Content-Type: application/json 
+{
+    "playerName": "Vishal",
+    "jerseyNumber": 17,
+    "role": "Bowler"
+}
+
+### get player api
+GET http://localhost:3000/players/:playerId/
+
+### update player api
+PUT http://localhost:3000/players/:playerId/
+Content-Type: application/json
+{
+    "playerName": "Maneesh",
+    "jerseyNumber": 54,
+    "role": "All-rounder"
+}
+
+### delete player api
+DELETE http://localhost:3000/players/:playerId/
+
