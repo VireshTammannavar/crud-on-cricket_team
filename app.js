@@ -39,9 +39,9 @@ app.get("/players/", async (request, response) => {
     };
   };
   response.send(
-    playersArray.map((eachPlayer) => {
+    playersArray.map((eachPlayer) =>
       convertDbToResponseObject(eachPlayer);
-    })
+    )
   );
 });
 
